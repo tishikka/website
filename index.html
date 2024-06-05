@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="smile-ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>English_lesson</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header">
+                <h1>Изучение профильного английского языка</h1>   
+            </div>
+            <div class="navbar">
+                <a href="index.html">Главная</a>
+                <a href="news.html">Новости</a>
+                <a href="contact.html">Контакты</a>
+                <div class="dropdown">
+                    <button class="dropbtn"> Выпадающий 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="lessons1.html">Lesson 1</a>
+                        <a href="lessons2.html">Lesson 2</a>
+                        <a href="lessons3.html">Lesson 3</a>
+                    </div>
+                </div> 
+                <a href="dictionary.html" style="float:right" class="dictionary">
+                    <img src="images/dictionary.jpg" alt="Словарь" style="width:46px;height:46px;border:0;">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <body style="background-image:url(images/main.jpg); background-size: cover;"></body>
+    <main class="container">
+        <article></article>
+        <h2>Уроки</h2>
+        <p>На этом сайте у вас есть возможность изучить профильный английский язык
+        </p>
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+            <h1>Форма регистрации</h1>
+            <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+            <hr>
+
+            <label for="email"><b>Имя пользователя</b></label>
+            <input type="text" placeholder="Введите ваше имя" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Введите вашу почту" name="email" required>
+        
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+        
+            <label for="psw-repeat"><b>Повторить пароль</b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+        
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+            </label>
+        
+            <p>Создавая учетную запись, вы соглашаетесь с нашим <a href="#" style="color:dodgerblue">Условия и конфиденциальность</a>.</p>
+        
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Отменить</button>
+                <button type="submit" class="signupbtn">Регистрация</button>
+            </div>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <div>
+            <section>
+                <p>
+                    Как вам сайт?
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
