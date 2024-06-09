@@ -7,83 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="smile-ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <title>English_lesson</title>
 </head>
 <body>
-    <header>
-        <div class="header_container">
-            <div class="navbar">
-                <a href="index.html">Главная</a>
-
-                <div class="dropdown">
-                    <button class="dropbtn"> Темы уроков 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="lessons/lesson-1.html">Неправильные глаголы</a>
-                        <a href="lessons/lesson-2.html">Фразовые глаголы</a>
-                        <a href="lessons/lesson-3.html">Синонимы</a>
-                        <a href="lessons/lesson-4.html">Выбор слов</a>
-                        <a href="lessons/lesson-5.html">Составление слов</a>
-                    </div>
-                </div> 
-
-                <div class="dropdown">
-                    <button class="dropbtn"> Теория
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="theory/theory-1.html">Theory 1</a>
-                        <a href="theory/theory-2.html">Theory 2</a>
-                        <a href="theory/theory-3.html">Theory 3</a>
-                        <a href="theory/theory-4.html">Theory 4</a>
-                    </div>
-                </div> 
-
-                <a href="dictionary.html" style="float:right" class="dictionary">
-                    <img src="images/dictionary.jpg" alt="Словарь" style="width:46px;height:46px;border:0;">
-                </a>
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right;" class="enter">Зарегистрироваться</button>
-
-                <div id="id01" class="modal">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
-                <form class="modal-content" action="../action_page.php">
-                    <div class="container">
-                        <h2>Форма регистрации</h2>
-                        <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
-                        <hr>
-            
-                        <label for="name"><b>Имя пользователя</b></label>
-                        <input type="text" placeholder=" Введите ваше имя" name="name" required>
-            
-                        <label for="email"><b>Email</b></label>
-                        <input type="email" placeholder=" Введите Email" name="email" required>
-                    
-                        <label for="psw"><b>Пароль</b></label>
-                        <input type="password" placeholder=" Введите пароль" name="psw" required>
-                    
-                        <label for="psw-repeat"><b>Повторите пароль</b></label>
-                        <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
-                        
-                        <label>
-                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
-                        </label>
-                    
-                        <div class="clearfix">
-            
-                            <button type="submit" class="signupbtn">Зарегистрироваться</button>
-                        </div>
-                    </div>
-                </form>
-                </div>
-
-                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; float: right;" class="enter">Вход</button>
-
-                <div id="id02" class="modal">
+    <header class="headering">
+        <div>
+            <a href="dictionary.html" style="float:right" class="dictionary">
+                <img src="images/dictionary.jpg" alt="Словарь" style="width:64px;height:64px;">
+            </a>
+            <button onclick="document.getElementById('id02').style.display='block'" class="ienter">ВХОД</button>
+            <div id="id02" class="modal">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
                 <form class="modal-content" action="../action_page.php">
                     <div class="container">
-                        <h2>Вход</h2>
+                        <div>
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right;" class="ienter">Зарегистрироваться</button>
+
+                            <div id="id01" class="modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+                            <fieldset class="modal-content" action="../action_page.php">
+                                <div class="container">
+                                    <h2>Форма регистрации</h2>
+                                    <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+                                    <hr>
+                        
+                                    <label for="name"><b>Имя пользователя</b></label>
+                                    <input type="text" placeholder=" Введите ваше имя" name="name" required>
+                        
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="email" placeholder=" Введите Email" name="email" required>
+                                
+                                    <label for="psw"><b>Пароль</b></label>
+                                    <input type="password" placeholder=" Введите пароль" name="psw" required>
+                                
+                                    <label for="psw-repeat"><b>Повторите пароль</b></label>
+                                    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+                                    
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+                                    </label>
+                                
+                                    <div class="clearfix">
+                        
+                                        <button type="submit" class="signupbtn">Зарегистрироваться</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            </div>
+                            <h2>Вход</h2>
+                        </div>
                         <hr>
             
                         <label for="name or email"><b>Имя пользователя или email</b></label>
@@ -98,7 +71,6 @@
                         </div>
                     </div>
                 </form>
-                </div>
             </div>
         </div>
     </header>
