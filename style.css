@@ -316,17 +316,32 @@ display: table;
     background: white;
     color: #2D2AAF;
 }
+.container-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
 
+.btn-container {
+    padding-top: 66px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 600px;
+}
 .card-animation {
-    position: absolute;
-    top: 28%;
+    /* position: absolute; */
+    top: 25%;
     left: 28%;
     width: 600px;
     height: 350px;
 }
 
 .card-inner {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
@@ -337,8 +352,16 @@ display: table;
     transform: rotateY(180deg);
 }
 
+.card-animation.flipped .card-front-2 {
+    display: none;
+}
+
+/* .card-animation.flipped .card-back-2 {
+    display: none;
+} */
+
 .card-front-2, .card-back-2 {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -365,9 +388,9 @@ display: table;
 }
 
 button.continue {
-    position: absolute;
-    top: 77%;
-    left: 35%;
+    /* position: absolute; */
+    top: 75%;
+    left: 28%;
     background-color: #2D2AAF;
     color: white;
     padding: 14px 16px;
@@ -384,9 +407,9 @@ button.continue:hover{
 }
 
 button.dictionary {
-    position: absolute;
-    top: 77%;
-    left: 50%;
+    /* position: absolute; */
+    top: 75%;
+    left: 49%;
     background-color: #2D2AAF;
     color: white;
     padding: 14px 16px;
@@ -400,6 +423,15 @@ button.dictionary {
 
 button.dictionary:hover{
     opacity:1;
+}
+
+.dictionary, .continue{
+    float: left;
+    width: 280px;
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
 }
 
 .card-front-1, .card-back-1 {
