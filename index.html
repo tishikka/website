@@ -13,21 +13,21 @@
 <body>
     <header class="headering">
         <div>
-            <a href="dictionary.html" style="float:right" class="dictionary">
+            <a href="dictionary.html" style="float:right" class="add-dictionary">
                 <img src="images/dictionary.jpg" alt="Словарь" style="width:64px;height:64px;">
             </a>
             <button onclick="document.getElementById('id02').style.display='block'" class="ienter">Вход</button>
             <div id="id02" class="modal">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
                 <form class="modal-content" action="../action_page.php">
-                    <div class="container">
+                    <div class="container-form">
                         <div>
                             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right;" class="ienter">Зарегистрироваться</button>
 
                             <div id="id01" class="modal">
                             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
                             <fieldset class="modal-content" action="../action_page.php">
-                                <div class="container">
+                                <div class="container-form">
                                     <h2>Форма регистрации</h2>
                                     <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
                                     <hr>
@@ -75,16 +75,17 @@
         </div>
     </header>
 
-    <body style="background-image:url(images/main.jpg); background-size: cover; width: auto; height: auto;"></body>
     <div class="basic">
-        <button onclick="document.location='lessons/lesson-1.html'" class="lesson1">Неправильные глаголы</button>
-        <button onclick="document.location='lessons/lesson-2.html'" class="lesson2">Фразовые глаголы</button>
-        <button onclick="document.location='lessons/lesson-3.html'" class="lesson3">Составление слов</button>
-        <button onclick="document.location='lessons/lesson-4.html'" class="lesson4">Выбор слов</button>
-        <button onclick="document.location='lessons/lesson-5.html'" class="lesson5">Синонимы</button>
-        <button onclick="document.location='theory/theory-1.html'" class="theory">Теория</button>
-        <h1></h1>
-        <p></p>
+        <div class="lessons-container">
+            <button onclick="document.location='lessons/lesson-1.html'" class="lesson1">Неправильные глаголы</button>
+            <button onclick="document.location='lessons/lesson-2.html'" class="lesson2">Фразовые глаголы</button>
+            <button onclick="document.location='lessons/lesson-3.html'" class="lesson3">Составление слов</button>
+            <button onclick="document.location='lessons/lesson-4.html'" class="lesson4">Выбор слов</button>
+            <button onclick="document.location='lessons/lesson-5.html'" class="lesson5">Синонимы</button>
+        </div>
+        <div class="btn-theory">
+            <button onclick="document.location='theory/theory-1.html'" class="theory">Теория</button>
+        </div>
     </div>
 </body>
 </html>
