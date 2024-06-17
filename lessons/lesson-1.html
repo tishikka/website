@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../smile-ico.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../smile-ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-<body>
-  <!-- <div class="card-animation-1">
-    <div class="card">
-        <div class="card-face card-front-1">
-            Вопрос: Что такое HTML?
+<body> 
+    <div class="container-card"> 
+        <div class="card-irregular-verb">
+            <h2>Irregular Verb</h2>
+            <label for="base-form">Base Form:</label>
+            <input type="text" id="base-form" name="base-form">
+            <label for="past-simple">Past Simple:</label>
+            <input type="text" id="past-simple" name="past-simple">
+            <label for="past-participle">Past Participle:</label>
+            <input type="text" id="past-participle" name="past-participle">
+            <button type="submit">Submit</button>
         </div>
-        <div class="card-face card-back-1">
-            <input type="text" placeholder="Введите ответ" autofocus>
+        <div class="btn-container">
+            <button type="submit" class="continue">Далее</button>
+            <button type="submit" class="btn-dictionary">Добавить в словарь</button>
         </div>
     </div>
-  </div> -->
-  <div class="cardind" id="card">
-    <div class="card-front-1">
-        <p>Question: What are your favorite colors?</p>
-        <button id="flipButton">Answer</button>
-    </div>
-    <div class="card-back-1">
-        <form id="answerForm">
-            <label for="answer1">Answer 1:</label>
-            <input type="text" id="answer1" name="answer1"><br>
-            <label for="answer2">Answer 2:</label>
-            <input type="text" id="answer2" name="answer2"><br>
-            <label for="answer3">Answer 3:</label>
-            <input type="text" id="answer3" name="answer3"><br>
-            <button type="submit" class="submit">Submit</button>
-        </form>
-    </div>
-</div>
-  <script src="../script.js"></script>
+    <button onclick="document.location='../index.html'" class="btn-back">← Назад</button>
 </body>
 </html>

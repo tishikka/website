@@ -149,6 +149,7 @@ display: table;
 .basic {
     display: flex;
     padding-left: 250px;
+    justify-content: space-around;
 
 }
 
@@ -200,8 +201,6 @@ display: table;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-/*    line-height: 150%; 
-    display: flex; */
     align-items: center;
     text-align: center;
     border-radius: 50px;
@@ -216,13 +215,42 @@ display: table;
     background: white;
     color: #2D2AAF;
 }
+
 .container-card {
     display: flex;
+    padding-top: 200px;
+    padding-left: 600px;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
+    height: 600px;
     align-items: center;
-    min-height: 100vh;
+    backface-visibility: hidden;
+
     justify-content: center;
+}
+
+.btn-back {
+    width: 15%;
+    height: 72px;
+
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+
+    background: #2D2AAF;
+    color: white;
+    border: 2px solid #2D2AAF;
+    line-height: 20px;
+} 
+
+.btn-back:hover {
+    background: white;
+    color: #2D2AAF;
 }
 
 .btn-container {
@@ -233,15 +261,11 @@ display: table;
     width: 600px;
 }
 .card-animation {
-    /* position: absolute; */
-    top: 25%;
-    left: 28%;
     width: 600px;
     height: 350px;
 }
 
 .card-inner {
-    /* position: relative; */
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
@@ -256,12 +280,7 @@ display: table;
     display: none;
 }
 
-/* .card-animation.flipped .card-back-2 {
-    display: none;
-} */
-
 .card-front-2, .card-back-2 {
-    /* position: absolute; */
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -288,9 +307,6 @@ display: table;
 }
 
 button.continue {
-    /* position: absolute; */
-    top: 75%;
-    left: 28%;
     background-color: #2D2AAF;
     color: white;
     padding: 14px 16px;
@@ -307,9 +323,6 @@ button.continue:hover{
 }
 
 button.btn-dictionary {
-    /* position: absolute; */
-    top: 75%;
-    left: 49%;
     background-color: #2D2AAF;
     color: white;
     padding: 14px 16px;
@@ -334,41 +347,57 @@ button.btn-dictionary:hover{
     font-size: 25px;
 }
 
-.card-front-1, .card-back-1 {
-    position: absolute;
-    top: 28%;
-    left: 28%;
-    width: 700px;
-    height: 400px;
-    backface-visibility: hidden;
-    border: 2px solid #2D2AAF;
-    box-shadow: 0 4px 8px #2D2AAF;
-    display: flex;
+.card-irregular-verb {
+    width: 60%;
+    height: 600px;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.6s;
-    border-radius: 50px;
+
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Фоновый цвет карточки */
+}
+.card-irregular-verb h2 {
+    margin-top: 0;
+}
+.card-irregular-verb input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+.card-irregular-verb button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card-irregular-verb button:hover {
+    background-color: #45a049;
+}
+
+table {
+}
+.table-irregular-verds {
 
     font-family: 'Poiret One';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-}
+    font-size: 16px;
 
-.card-front-1 {
-    background-color: #f8f8f8;
+    border-radius: 4px;
 }
-
-.card-back-1 {
-    background-color: #e8e8e8;
-    transform: rotateY(180deg);
-}
-
-.cardind.flipped .card-front-1 {
-    transform: rotateY(180deg);
-}
-
-.cardind.flipped .card-back-1 {
-    transform: rotateY(360deg);
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
 }
