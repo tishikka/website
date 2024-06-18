@@ -1,8 +1,7 @@
 body {
     background-image:url(images/main.jpg);
     background-size: cover;
-    width: auto;
-    height: auto;
+    background-repeat: no-repeat;
 }
 
 .headering {
@@ -227,6 +226,11 @@ display: table;
     backface-visibility: hidden;
 
     justify-content: center;
+
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
 }
 
 .btn-back {
@@ -252,7 +256,33 @@ display: table;
     background: white;
     color: #2D2AAF;
 }
+.btn-back-theory {
+    position: fixed;
+    bottom: 0;
+    left: 4;
 
+    width: 15%;
+    height: 65px;
+
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+
+    background: #2D2AAF;
+    color: white;
+    border: 2px solid #2D2AAF;
+    line-height: 20px;
+} 
+
+.btn-back-theory:hover {
+    background: white;
+    color: #2D2AAF;
+}
 .btn-container {
     padding-top: 66px;
     display: flex;
@@ -349,22 +379,26 @@ button.btn-dictionary:hover{
 
 .card-irregular-verb {
     width: 60%;
-    height: 600px;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 
 
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 1px solid #2D2AAF;
+    border-radius: 50px;
     padding: 20px;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white; /* Фоновый цвет карточки */
+    background-color: white; 
+    box-shadow: 0 4px 8px #2D2AAF;
 }
 .card-irregular-verb h2 {
     margin-top: 0;
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
 }
 .card-irregular-verb input {
     display: block;
@@ -372,32 +406,175 @@ button.btn-dictionary:hover{
     padding: 8px;
     margin: 10px 0;
     box-sizing: border-box;
-}
-.card-irregular-verb button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.card-irregular-verb button:hover {
-    background-color: #45a049;
+    box-shadow: 0 4px 8px #2D2AAF;
 }
 
-table {
-}
-.table-irregular-verds {
+.card-irregular-verb button {
+    background-color: #2D2AAF;
+    color: white;
+    padding: 14px 16px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50px;
 
     font-family: 'Poiret One';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-
-    border-radius: 4px;
+    font-size: 25px;
 }
+.card-irregular-verb button:hover {
+    background-color: #2D2AAF;
+}
+
+.container-theory {
+    width: 100%;
+}
+
+.table-irregular-verbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    border-radius: 10px;
+}
+
+.table-phrasal-verbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    border-radius: 10px;
+}
+
 td, th {
-    border: 1px solid #ddd;
+    border: 2px solid #2D2AAF;
     text-align: left;
     padding: 8px;
+}
+
+.text-display-right {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 50px;
+    background: #f1f1f1;
+
+    
+    box-shadow: 0 4px 8px #00ff88;
+}
+
+.text-display-wrong {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 50px;
+    background: #f1f1f1;
+
+    
+    box-shadow: 0 4px 8px #ff0000;
+}
+
+.text-display:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-irregular-verb {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: justify;
+}
+
+p.phrasal {
+    font-size: 38px;
+}
+
+li {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: justify;
+}
+h1 {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    border-radius: 50px;
+    background-color: #2D2AAF;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.card-word-choice {
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 1px solid #2D2AAF;
+    border-radius: 50px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; 
+    box-shadow: 0 4px 8px #2D2AAF;
+}
+
+.btn-choice {
+
 }
